@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Suivi voyage Madagascar</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-page="accueil">
+<main class="page">
+  <section class="hero">
+    <div class="eyebrow">App voyage Madagascar • simple • mobile • terrain</div>
+    <h1>Tableau de bord du séjour</h1>
+    <p>Un cockpit léger pour consulter vite l’essentiel : aujourd’hui, budget, prochain événement, prochaine réservation, convertisseur et dépenses.</p>
+  </section>
+
+  <section class="today-banner">
+    <div class="field-label">Aujourd’hui</div>
+    <div class="kpi" data-today-label>—</div>
+    <div class="note">Objectif : une consultation immédiate, sans fouiller dans 8 pages.</div>
+  </section>
+
+  <section class="quick-links panel">
+    <h2 class="section-title">Actions rapides</h2>
+    <div class="quick-links-grid">
+      <a class="quick-link" href="pages/convertisseur.html">
+        <strong>Convertisseur</strong>
+        <span>Usage terrain immédiat AR ↔ €</span>
+      </a>
+      <a class="quick-link" href="pages/depenses.html">
+        <strong>Ajouter une dépense</strong>
+        <span>Saisie rapide + tableau détaillé</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="dashboard-grid">
+    <section class="dashboard-box">
+      <h2>Résumé du jour</h2>
+      <div id="dailySummary" class="compact-list"><div class="compact-item"><p>Chargement…</p></div></div>
+    </section>
+
+    <section class="dashboard-box">
+      <h2>Météo locale</h2>
+      <div id="weatherWidget" class="compact-list"><div class="compact-item"><p>Chargement…</p></div></div>
+    </section>
+
+    <section class="dashboard-box">
+      <h2>Aperçu budget</h2>
+      <div id="budgetPreview" class="compact-list"><div class="compact-item"><p>Chargement…</p></div></div>
+    </section>
+
+    <section class="dashboard-box">
+      <h2>Prochain événement</h2>
+      <div id="nextEvent" class="compact-list"><div class="compact-item"><p>Chargement…</p></div></div>
+    </section>
+
+    <section class="dashboard-box">
+      <h2>Prochaine réservation</h2>
+      <div id="nextReservation" class="compact-list"><div class="compact-item"><p>Chargement…</p></div></div>
+    </section>
+
+    <section class="dashboard-box">
+      <h2>Rappel terrain</h2>
+      <div class="compact-list">
+        <div class="compact-item">
+          <strong>Hors ligne</strong>
+          <p>Le budget, les notes et le dernier taux mémorisé restent exploitables même avec peu de réseau.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">Navigation complète</h2>
+    <div class="nav-grid">
+      <a data-nav-key="convertisseur" class="nav-item" href="./pages/convertisseur.html"><strong>Convertisseur</strong><span>AR ↔ € rapide</span></a>
+      <a data-nav-key="depenses" class="nav-item" href="./pages/depenses.html"><strong>Dépenses</strong><span>Saisie rapide + tableau</span></a>
+      <a data-nav-key="feuille-de-route" class="nav-item" href="./pages/feuille-de-route.html"><strong>Feuille de route</strong><span>Programme détaillé</span></a>
+      <a data-nav-key="reservations" class="nav-item" href="./pages/reservations.html"><strong>Réservations</strong><span>Hôtels, voiture, activités</span></a>
+      <a data-nav-key="agenda" class="nav-item" href="./pages/agenda.html"><strong>Agenda</strong><span>Dates clés</span></a>
+      <a data-nav-key="infos-utiles" class="nav-item" href="./pages/infos-utiles.html"><strong>Infos utiles</strong><span>Pratique et urgences</span></a>
+    </div>
+  </section>
+
+  <div class="page-footer">Projet voyage Madagascar • <span data-current-year></span></div>
+</main>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
